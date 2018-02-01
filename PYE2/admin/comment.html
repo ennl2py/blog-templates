@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang='zh'>
+	<head>
+		<!-- meta -->
+		<meta charset="utf-8">
+		<!-- 编码 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 以上代码告诉IE浏览器，IE8/9及以后的版本都会以最高版本IE来渲染页面 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- 移动端页面适应:width - viewport的宽度
+						height - viewport的高度 
+						initial-scale - 初始的缩放比例
+						minimum-scale - 允许用户缩放到的最小比例   
+						maximum-scale - 允许用户缩放到的最大比例  
+						user-scalable - 用户是否可以手动缩放  -->
+		<!-- 上述3个meta标签必须放在最前面，任何其他内容都必须跟随其后！ Bootstrap3格式 -->
+		
+		<title>PYE2博客后台系统</title>
+		
+		<!-- css -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+
+		<!-- js -->
+		<!--[if lt IE 9]>
+		  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+	<section class="container-fluid">
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">PYE2博客后台系统</a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin <span class="caret"></span></a>
+								<ul class="dropdown-menu dropdown-menu-left">
+									<li><a href="/Index/outLogin" onClick="if(!confirm('是否确认退出？'))return false;">退出登录</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		<div class="row">
+			<aside class="col-sm-3 col-md-2 col-lg-2 sidebar">
+				<ul class="nav nav-sidebar">
+					<li><a href="index.html">概况</a></li>
+					<li class="active"><a href="article.html">文章</a></li>
+					<li><a href="category.html">文章分类</a></li>
+					<li><a href="user.html">用户</a></li>
+				</ul>
+			</aside>
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-lg-10 col-md-offset-2 main" id="main">
+				<h3>XXX文章评论管理</h3>
+				<div class="commentslist">
+					<div class="comments1">
+						<div class="avatar">
+							<img src="http://cdn2.jianshu.io/assets/default_avatar/5-33d2da32c552b8be9a0548c7a4576607.jpg" alt="头像" class="img-rounded img-responsive">
+						</div>
+						<div class="uinfo">
+							<span><strong>我是作者</strong><span>
+						</div>
+						<div class="commentcont">
+							<span>通常情况下，Django 的视图函数（View）是一个纯粹的 Python 函数，它接收一个 request（HTTP 请求）,通常情况下，Django 的视图函数（View）是一个纯粹的 Python 函数，它接收一个 request（HTTP 请求）通常情况下，Django 的视图函数（View）是一个纯粹的 Python 函数，它接收一个 request（HTTP 请求）通常情况下，Django 的</span>
+						</div>
+						<div class="commentfoot">
+							<span class="pub-time text-muted">40分钟前</span> &bull; <span class="pub-time text-muted"><button type="submit" class="btn btn-default"> 屏蔽 </button></span>
+						</div>
+						<hr/>
+						<div class="comments2">
+							<div class="avatar1">
+								<img src="http://cdn2.jianshu.io/assets/default_avatar/5-33d2da32c552b8be9a0548c7a4576607.jpg" alt="头像" class="img-rounded img-responsive">
+							</div>
+							<div class="uinfo1">
+								<span><strong>我是回复人</strong><span> <span class="glyphicon glyphicon-share-alt"></span> <span><strong>我是被回复人</strong><span>
+							</div>
+							<div class="commentcont1">
+								<span>通常情况下，Django 的视图函数（View）是一个纯粹的 Python 函数，它接收一个 request（HTTP 请求）,通常情况下，Django 的视图函数（View）是一个纯粹的 Python 函数，它接收一个 request（HTTP 请求）通常情况下，Django 的视图函数（View）是一个纯粹的 Python 函数，它接收一个 request（HTTP 请求）通常情况下，Django 的</span>
+							</div>
+							<div class="commentfoot1">
+								<span class="pub-time text-muted">40分钟前</span> &bull; <span class="pub-time text-muted"><button type="submit" class="btn btn-default"> 屏蔽 </button></span>
+							</div>
+							<hr/>
+						</div>
+						<div class="comments2">
+							<div class="avatar1">
+								<img src="http://cdn2.jianshu.io/assets/default_avatar/5-33d2da32c552b8be9a0548c7a4576607.jpg" alt="头像" class="img-rounded img-responsive">
+							</div>
+							<div class="uinfo1">
+								<span><strong>我是回复人</strong><span> <span class="glyphicon glyphicon-share-alt"></span> <span><strong>我是被回复人</strong><span>
+							</div>
+							<div class="commentcont1">
+								<span>通常情况下，Django 的视图函数（View）是一个纯粹的 Python 函数，它接收一个 request（HTTP 请求）,通常情况下，Django 的视图函数（View）是一个纯粹的 Python 函数，它接收一个 request（HTTP 请求）通常情况下，Django 的视图函数（View）是一个纯粹的 Python 函数，它接收一个 request（HTTP 请求）通常情况下，Django 的</span>
+							</div>
+							<div class="commentfoot1">
+								<span class="pub-time text-muted">40分钟前</span> &bull; <span class="pub-time text-muted"><button type="submit" class="btn btn-default"> 屏蔽 </button></span>
+							</div>
+							<hr/>
+						</div>
+						<div class="comments2">
+							<div class="avatar1">
+								<img src="http://cdn2.jianshu.io/assets/default_avatar/5-33d2da32c552b8be9a0548c7a4576607.jpg" alt="头像" class="img-rounded img-responsive">
+							</div>
+							<div class="uinfo1">
+								<span><strong>我是回复人</strong><span> <span class="glyphicon glyphicon-share-alt"></span> <span><strong>我是被回复人</strong><span>
+							</div>
+							<div class="commentcont1">
+								<span>通常情况下，Django 的视图函数（View）是一个纯粹的 Python 函数，它接收一个 request（HTTP 请求）,通常情况下，Django 的视图函数（View）是一个纯粹的 Python 函数，它接收一个 request（HTTP 请求）通常情况下，Django 的视图函数（View）是一个纯粹的 Python 函数，它接收一个 request（HTTP 请求）通常情况下，Django 的</span>
+							</div>
+							<div class="commentfoot1">
+								<span class="pub-time text-muted">40分钟前</span> &bull; <span class="pub-time text-muted"><button type="submit" class="btn btn-default"> 取消屏蔽 </button></span>
+							</div>
+							<hr/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+		<!-- jQuery  -->
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

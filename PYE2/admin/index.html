@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang='zh'>
+	<head>
+		<!-- meta -->
+		<meta charset="utf-8">
+		<!-- 编码 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 以上代码告诉IE浏览器，IE8/9及以后的版本都会以最高版本IE来渲染页面 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- 移动端页面适应:width - viewport的宽度
+						height - viewport的高度 
+						initial-scale - 初始的缩放比例
+						minimum-scale - 允许用户缩放到的最小比例   
+						maximum-scale - 允许用户缩放到的最大比例  
+						user-scalable - 用户是否可以手动缩放  -->
+		<!-- 上述3个meta标签必须放在最前面，任何其他内容都必须跟随其后！ Bootstrap3格式 -->
+		
+		<title>PYE2博客后台系统</title>
+		
+		<!-- css -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+
+		<!-- js -->
+		<!--[if lt IE 9]>
+		  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+	<section class="container-fluid">
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">PYE2博客后台系统</a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin <span class="caret"></span></a>
+								<ul class="dropdown-menu dropdown-menu-left">
+									<li><a href="login.html" onClick="if(!confirm('是否确认退出？'))return false;">退出登录</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		<div class="row">
+			<aside class="col-sm-3 col-md-2 col-lg-2 sidebar">
+				<ul class="nav nav-sidebar">
+					<li class="active"><a href="index.html">概况</a></li>
+					<li><a href="article.html">文章</a></li>
+					<li><a href="category.html">文章分类</a></li>
+					<li><a href="user.html">用户</a></li>
+				</ul>
+			</aside>
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-lg-10 col-md-offset-2 main" id="main">
+				<h3>信息总览</h3>
+				<div class="row placeholders">
+					<div class="col-sm-4 placeholder">
+						<h4>文章</h4>
+						<span class="text-muted">XXX篇</span>
+					</div>
+					<div class="col-sm-4 placeholder">
+						<h4>评论</h4>
+						<span class="text-muted">XXX条</span>
+					</div>
+					<div class="col-sm-4 placeholder">
+						<h4>已登录用户总数</h4>
+						<span class="text-muted">XXX</span>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	
+		<!-- jQuery  -->
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
